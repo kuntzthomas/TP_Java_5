@@ -33,8 +33,7 @@ public class AjouterPizzaOptionMenu extends OptionMenu {
 		try {
 			dao.saveNewPizza(pizza);
 		} catch (Exception e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
+			System.out.println(e.getMessage());
 		}
 		
 		return true;

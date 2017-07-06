@@ -38,8 +38,7 @@ public class SupprimerPizzaOptionMenu extends OptionMenu {
 			try {
 				dao.deletePizza(codePizza);
 			} catch (Exception e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
+				System.out.println(e.getMessage());
 			}
 
 			System.out.println("Pizza supprimée");

@@ -31,7 +31,7 @@ public class ModifierPizzaOptionMenu extends OptionMenu {
 				dao.verifierExistence(codePizza);
 				codeTrouve = true;
 			} catch (UpdatePizzaException e) {
-				System.out.println("Le code " + codePizza + " n'existe pas");
+				System.out.println(e.getMessage());
 				codeTrouve = false;
 			}
 		} while (!codeTrouve);
@@ -52,8 +52,7 @@ public class ModifierPizzaOptionMenu extends OptionMenu {
 			try {
 				dao.updatePizza(codePizza, pizza);
 			} catch (Exception e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
+				System.out.println(e.getMessage());
 			}
 
 			System.out.println("Pizza modifiée");
