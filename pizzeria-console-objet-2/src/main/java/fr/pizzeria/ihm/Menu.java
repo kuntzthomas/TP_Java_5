@@ -29,7 +29,7 @@ public class Menu {
 		System.out.println("99. Sortie.");
 	}
 
-	public void manage() {
+	public void manage() throws Exception {
 
 		PizzaDaoMemoire dao = new PizzaDaoMemoire();
 		

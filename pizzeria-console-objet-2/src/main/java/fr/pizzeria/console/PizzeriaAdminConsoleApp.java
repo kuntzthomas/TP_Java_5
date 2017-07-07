@@ -9,7 +9,7 @@ import fr.pizzeria.ihm.Menu;
  */
 public class PizzeriaAdminConsoleApp {
 
-	public static void main(String[] args){
+	public static void main(String[] args) throws Exception{
 		
 		Menu menu = new Menu();
 		
